@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="body">
+    <header class= "header">
+        <h1 class="h1">Weather Forecast</h1>
+    </header>
+    <main class="wrap">
+      <div class="columns">
+        <!-- user searches for a specific city's weather -->
+        <section class="column">
+          <div class="searchBarContainer" >
+            <h2 class="h2">Search For A City</h2>
+            <input class="searchBar" id="citySearch" type="text" placeholder="City Name">
+            <button class="subBtn" id="submitBtn">Submit</button> 
+          </div>  
+        <!--this section displays the previsouly searched cities so the user can easily go back  -->
+          <div class="searchHistoryContainer">
+            <h2 class="h2">Search History</h2>
+            <ul id="searchHistory"></ul>
+          </div> 
+        </section>
+        <!-- this section displays the current weather of the city (searched or selected form history) -->
+        <section class="column">
+            <div class="currentWeather">
+             <h2 class="h2">Current Weather</h2>
+             <div id="currWeather"></div>
+            </div>
+         </section>
+          <!-- this section displays the forecasted weather of the city (searched or selected form history) -->
+        <section class="column">
+           <div class="5dayForecastContainer">
+            <h2 class="h2">5 Day Forecast</h2>
+            <div id="forecaster"></div>
+           </div>
+        </section>
+      </div>   
+        <script src="./script.js"></script>
+
+    </main>
+</body>
+</html>
+
