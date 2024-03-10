@@ -30,3 +30,4 @@ OpenWeatherMap API was use to provide the weather data for this app.
 Created by: Blair Dowling
 
 <img src="./screenshot.png" width="650" height="350">
+https://blair-d.github.io/My-Weather-Forecaster/ 
