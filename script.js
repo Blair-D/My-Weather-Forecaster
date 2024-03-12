@@ -13,7 +13,7 @@ let city = document.getElementById('citySearch').value;
 
 // submit button event listner for searcing cities
 document.getElementById('submitBtn').addEventListener('click', function() {
-    city;
+    let city = document.getElementById('citySearch').value;
     //this will get the weather from the api 
     getWeather(city); 
     // this will add the searched city to the  users history section
@@ -51,7 +51,7 @@ window.onload = recallSavedCities;
 
 // the function will get the city's current and forcasted weather for display
 function getWeather(city) {
-    
+    console.log(`city ${city}`)
     let apiUrl = 'https://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=' + apiKey + '&units=imperial';
     
     // this fetch is for the current weather data
